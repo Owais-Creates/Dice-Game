@@ -1,0 +1,42 @@
+.box {
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.box_checked {
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    transition: 0.3s ease-out;
+}
+
+.box_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    margin-top: -50px;
+    gap: 20px;
+}
+
+.select_number {
+
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 150px;
+   margin-top: 30px;
+   text-transform: uppercase;
+
+}
