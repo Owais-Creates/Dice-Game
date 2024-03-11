@@ -1,12 +1,13 @@
 
-import { useState } from 'react';
 import styles from './NumberSelector.module.css'
 
-const NumberSelector = ({setSelectedNumber, selectedNumber}) => {
+const NumberSelector = ({ setSelectedNumber, selectedIdx, setSelectedIdx, error, setError }) => {
 
     const numberArr = [1, 2, 3, 4, 5, 6];
-    
-    const [selectedIdx, setSelectedIdx] = useState(null);
+    const numberSelectorHandler = (val) => {
+        setSelectedNumber(val);
+        setError("");
+    }
 
     return (
         <>
@@ -17,7 +18,7 @@ const NumberSelector = ({setSelectedNumber, selectedNumber}) => {
                         key={i}
                         className={selectedIdx === i ? styles.box_checked : styles.box}
                         onClick={() => {
-                            setSelectedNumber(val);
+                            numberSelectorHandler(val)
                             setSelectedIdx(i);
                         }}>
                         {val}
@@ -26,6 +27,8 @@ const NumberSelector = ({setSelectedNumber, selectedNumber}) => {
             </div>
 
             <h2 className={styles.select_number} >Select number</h2>
+            <p className={styles.error}>{error}</p>
+
         </>
     )
 }

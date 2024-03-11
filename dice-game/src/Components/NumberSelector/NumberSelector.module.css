@@ -32,11 +32,19 @@
 }
 
 .select_number {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
 
-   display: flex;
-   justify-content: flex-end;
-   margin-right: 150px;
-   margin-top: 30px;
-   text-transform: uppercase;
+.error {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: red;
 
 }
