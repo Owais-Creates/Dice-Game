@@ -24,6 +24,7 @@ const Gameplay = () => {
 
     if (selectedNumber == randomNumber) {
       setScore((value) => value + 1);
+      setError("YaY !! you guessed it right");
     }
 
     setSelectedIdx(undefined);
@@ -33,6 +34,8 @@ const Gameplay = () => {
 
   const reset = () => {
     setScore(0);
+    setError(" ")
+
   }
 
 

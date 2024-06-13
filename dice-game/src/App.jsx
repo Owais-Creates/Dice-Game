@@ -5,10 +5,10 @@ import { useState } from 'react'
 
 const App = () => {
 
-  const [isGameStarted, setIsGameStarted] = useState(true);
+  const [isGameStarted, setIsGameStarted] = useState(false);
 
   const gameToggle = () => {
-    setIsGameStarted((val) => !val);
+    setIsGameStarted(true);
   }
 
   return (

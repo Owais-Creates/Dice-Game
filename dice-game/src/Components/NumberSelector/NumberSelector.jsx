@@ -3,7 +3,7 @@ import styles from './NumberSelector.module.css'
 
 const NumberSelector = ({ setSelectedNumber, selectedIdx, setSelectedIdx, error, setError }) => {
 
-    const numberArr = [1, 2, 3, 4, 5, 6];
+const numberArr = [1, 2, 3, 4, 5, 6];
     const numberSelectorHandler = (val) => {
         setSelectedNumber(val);
         setError("");

@@ -6,7 +6,7 @@ const MainPage = ({ toggle }) => {
             <div className={styles.container}>
 
                 <div>
-                    <img src="/public/images/diced.png" alt="" />
+                    <img src="/images/diced.png" alt="" />
                 </div>
 
                 <div>
